@@ -13,19 +13,19 @@
 
     <div id="capture">
         <div class="cardImageHolder">
-            <img class="cardImage" src="https://pbs.twimg.com/profile_images/1082174484835065856/zO8VO3LX_400x400.jpg">
+            <img class="cardImage" src="./images/icon.png">
         </div>
         <div class="cardTitleHolder">
-            <div class="cardTitle" name="lightElement">グウジ</div>
+            <div class="cardTitle" name="noElement">カード作成</div>
         </div>
         <div class="effectBg"></div>
         <div class="elementIconHolder">
-            <img class="cardImage" name="lightElement">
+            <img class="elementIcon" name="noElement">
         </div>
-        <div class="effectTxt" name="lightElement">25%攻21</div>
-        <div class="effectAlt" name="lightElement">頭が閃光</div>
+        <div class="effectText" name="noElement">完全無料！</div>
+        <div class="effectAlt" name="noElement">広告なし！</div>
         <div class="money" name="none">\777</div>
-        <div class="mana" name="mana">
+        <div class="mana" name="none">
             <div class="mana1">消費</div>
             <div class="mana2">MP200</div>
         </div>
@@ -33,10 +33,10 @@
 
     <div id="userInterface">
         <label for="imgInput">画像
-            <input id="imgInput" name="imgInput" type="file" accept="image/*">
+            <input id="imgInput" name="imgInput" type="file" accept="image/*" autocomplete="off">
         </label>
         <label for="cardTitleInput">カードの名前
-            <input type="text" class="cardTitleInput" name="cardTitleInput">
+            <input type="text" value="カード作成" class="cardTitleInput" name="cardTitleInput" autocomplete="off">
         </label>
         <label for="elementIconInput">属性
             <select name="elementIconInput" class="elementIconInput">
@@ -50,10 +50,10 @@
             </select>
         </label>
         <label for="effectTextInput">効果
-            <input type="text" class="effectTextInput" name="effectTextInput">
+            <input type="text" value="完全無料！" class="effectTextInput" name="effectTextInput" autocomplete="off">
         </label>
         <label for="effectAltInput">効果2
-            <input type="text" class="effectAltInput" name="effectAltInput">
+            <input type="text" value="広告なし！" class="effectAltInput" name="effectAltInput" autocomplete="off">
         </label>
         <label for="cardTypeList">種類
             <select name="cardTypeList" class="cardTypeList">
@@ -63,7 +63,7 @@
             </select>
         </label>
         <label for="cardTypeValue">数値
-            <input type="text" class="cardTypeValue" name="cardTypeValue">
+            <input type="number" value="0" class="cardTypeValue" name="cardTypeValue" autocomplete="off">
         </label>
         <input id="dlBtn" type="button" onclick="imageDownload()" value="Download">
     </div>
